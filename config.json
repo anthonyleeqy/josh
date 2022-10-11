@@ -1,0 +1,91 @@
+
+{
+    "max_open_trades": 100,
+    "stake_currency": "USDT",
+    "stake_amount": 100,
+    "tradable_balance_ratio": 0.99,
+    "fiat_display_currency": "USD",
+    "dry_run": true,
+    "cancel_open_orders_on_exit": false,
+    "unfilledtimeout": {
+        "buy": 10,
+        "sell": 10,
+        "exit_timeout_count": 0,
+        "unit": "minutes"
+    },
+    "bid_strategy": {
+        "price_side": "bid",
+        "ask_last_balance": 0.0,
+        "use_order_book": true,
+        "order_book_top": 1,
+        "check_depth_of_market": {
+            "enabled": false,
+            "bids_to_ask_delta": 1
+        }
+    },
+    "ask_strategy": {
+        "price_side": "ask",
+        "use_order_book": true,
+        "order_book_top": 1
+    },
+    "exchange": {
+        "name": "binanceus",
+        "key": "",
+        "secret": "",
+        "ccxt_config": {},
+        "ccxt_async_config": {},
+        "pair_whitelist": [
+            "1INCH/USDT", "AAVE/USDT", "ADA/USDT", "ALGO/USDT", "ANT/USDT", "APE/USDT", "ATOM/USDT", "AUDIO/USDT", "AVAX/USDT", "AXS/USDT", "BAND/USDT", "BAT/USDT", "BCH/USDT", "BNB/USDT", "BTC/USDT", "BUSD/USDT", "CHZ/USDT", "COMP/USDT", "CRV/USDT", "CTSI/USDT", "DOGE/USDT", "DOT/USDT", "EGLD/USDT", "ENJ/USDT", "ENS/USDT", "EOS/USDT", "ETC/USDT", "ETH/USDT", "FIL/USDT", "FTM/USDT", "GALA/USDT", "GRT/USDT", "HNT/USDT", "KNC/USDT", "LINK/USDT", "LPT/USDT", "LRC/USDT", "LTC/USDT", "MANA/USDT", "MATIC/USDT", "MKR/USDT", "NEAR/USDT", "NEO/USDT", "NMR/USDT", "OGN/USDT", "OMG/USDT", "ONE/USDT", "ONT/USDT", "OXT/USDT", "PAXG/USDT", "POLY/USDT", "QTUM/USDT", "REQ/USDT", "SHIB/USDT", "SLP/USDT", "SNX/USDT", "SOL/USDT", "STORJ/USDT", "SUSHI/USDT", "TLM/USDT", "UNI/USDT", "USDC/USDT", "VET/USDT", "VTHO/USDT", "XLM/USDT", "YFI/USDT", "ZEC/USDT", "ZEN/USDT", "ZRX/USDT"
+        
+
+        ],
+        "pair_blacklist": [
+           
+        ]
+    },
+    "pairlists": [
+        {
+            "method": "VolumePairList",
+            "number_assets": 100,
+            "sort_key": "quoteVolume",
+            "min_value": 0,
+            "refresh_period": 1800
+        }
+    ],
+    "edge": {
+        "enabled": false,
+        "process_throttle_secs": 3600,
+        "calculate_since_number_of_days": 7,
+        "allowed_risk": 0.01,
+        "stoploss_range_min": -0.01,
+        "stoploss_range_max": -0.1,
+        "stoploss_range_step": -0.01,
+        "minimum_winrate": 0.60,
+        "minimum_expectancy": 0.20,
+        "min_trade_number": 10,
+        "max_trade_duration_minute": 1440,
+        "remove_pumps": false
+    },
+    "telegram": {
+        "enabled": true,
+        "token": "5150397280:AAEtvbnWeVXsxI4nPr3GH_cf5lXniCIstbY",
+        "chat_id": "5266274827"
+    },
+    "api_server": {
+        "enabled": true,
+        "listen_ip_address": "127.0.0.1",
+        "listen_port": 8080,
+        "verbosity": "error",
+        "enable_openapi": false,
+        "jwt_secret_key": "e0eebb8a27c0d46f88238689f526b4a171e56408135be229700b1b196288a8f5",
+        "CORS_origins": [],
+        "username": "freqtrader",
+        "password": ""
+    },
+    "bot_name": "freqtrade",
+    "initial_state": "running",
+    "forcebuy_enable": false,
+    "internals": {
+        "process_throttle_secs": 5
+    }
+}
