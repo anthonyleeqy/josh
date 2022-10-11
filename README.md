@@ -8,7 +8,7 @@ How to wake Josh up?
 
 1. Start off 
 
-To start off docker image 
+   To start off docker image 
 ```
 cd /Users/~/freqtrade/
 
@@ -17,48 +17,48 @@ docker-compose up -d
 
 2. Download data
 
-I personally use Binance US data.
+   I personally use Binance US data.
 ```
 docker-compose run freqtrade download-data --exchange binanceus -t 15m
 ```
 3. Backtesting
 
-Back test if all the hyperparameters are working well to serve the puspose of maximizing profit.
+   Back test if all the hyperparameters are working well to serve the puspose of maximizing profit.
 
-**change to static pair list "method": "StaticPairList" in config.json file
+   **change to static pair list "method": "StaticPairList" in config.json file
 ```
 docker-compose run freqtrade backtesting -s ADXMomentum
 ```
 
 4. Hyperparameter Tuning
 
-**change to static pair list "method": "StaticPairList"
+   **change to static pair list "method": "StaticPairList"
 ```
 docker-compose run freqtrade hyperopt --hyperopt-loss SharpeHyperOptLossDaily --strategy ADXMomentumHopt -e 1500
 ```
-**can later move back to VolumePairList
+   **can later move back to VolumePairList
 
 5. Data Analysis
 
-Stop the container first, docker compose down
+   Stop the container first, docker compose down
 ```
 cd /Users/~/freqtrade
 
 docker-compose -f docker/docker-compose-jupyter.yml up
 ```
-Open Jupiter notebook in browser using popped up url.
+   Open Jupiter notebook in browser using popped up url.
 
-Upload config.json and strategy file to the same directory as popped up Jupiter notebook.
+   Upload config.json and strategy file to the same directory as popped up Jupiter notebook.
 
 
 6. File transfer
 
-Use FileZilla to transfer configuration file to virtual machine or cloud.
+   Use FileZilla to transfer configuration file to virtual machine or cloud.
 
 
 7. Analyze trading results
 
-From time to time, use the strategy_analysis_AL.ipynb file to analyze and visualize trading results. Strategy needs constant update and analysis based on market conditions.
+   From time to time, use the strategy_analysis_AL.ipynb file to analyze and visualize trading results. Strategy needs constant update and analysis based on market    conditions.
 
 
 **Josh is sleeping right now, since the market out there is brutal right now. I will come back and make some more edits when it's time to wake him up :)
