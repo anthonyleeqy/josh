@@ -56,4 +56,6 @@ Upload config.json and strategy file to the same directory as popped up Jupiter 
 Use FileZilla to transfer configuration file to virtual machine or cloud.
 
 
-7. From time to time, use the strategy_analysis_AL.ipynb file to analyze and visualize trading results. Strategy needs constant update and analysis based on market conditions.
+7. Analyze trading results
+
+From time to time, use the strategy_analysis_AL.ipynb file to analyze and visualize trading results. Strategy needs constant update and analysis based on market conditions.
