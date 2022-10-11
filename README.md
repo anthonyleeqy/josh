@@ -33,23 +33,27 @@ docker-compose run freqtrade backtesting -s ADXMomentum
 4. Hyperparameter Tuning
 
    **change to static pair list "method": "StaticPairList"
+   
+   **can later move back to VolumePairList
+   
 ```
 docker-compose run freqtrade hyperopt --hyperopt-loss SharpeHyperOptLossDaily --strategy ADXMomentumHopt -e 1500
 ```
-   **can later move back to VolumePairList
+
 
 5. Data Analysis
 
-   Stop the container first, docker compose down
+   Stop the container first, docker compose down.
+   
+   Open Jupiter notebook in browser using popped up url.
+   
+   Upload config.json and strategy file to the same directory as popped up Jupiter notebook.
+   
 ```
 cd /Users/~/freqtrade
 
 docker-compose -f docker/docker-compose-jupyter.yml up
 ```
-   Open Jupiter notebook in browser using popped up url.
-
-   Upload config.json and strategy file to the same directory as popped up Jupiter notebook.
-
 
 6. File transfer
 
