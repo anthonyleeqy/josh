@@ -14,6 +14,7 @@ cd /Users/~/freqtrade/
 
 docker-compose up -d
 ```
+<br/>
 
 **2. Data Downloading**
 
@@ -21,6 +22,8 @@ docker-compose up -d
 ```
 docker-compose run freqtrade download-data --exchange binanceus -t 15m
 ```
+<br/>
+
 **3. Backtesting**
 
    Back test if all the hyperparameters are working well to serve the puspose of maximizing profit.
@@ -29,6 +32,7 @@ docker-compose run freqtrade download-data --exchange binanceus -t 15m
 ```
 docker-compose run freqtrade backtesting -s ADXMomentum
 ```
+<br/>
 
 **4. Hyperparameter Tuning**
 
@@ -40,6 +44,7 @@ docker-compose run freqtrade backtesting -s ADXMomentum
 docker-compose run freqtrade hyperopt --hyperopt-loss SharpeHyperOptLossDaily --strategy ADXMomentumHopt -e 1500
 ```
 
+<br/>
 
 **5. Data Analysis**
 
@@ -54,10 +59,12 @@ cd /Users/~/freqtrade
 
 docker-compose -f docker/docker-compose-jupyter.yml up
 ```
+<br/>
 
 **6. File Transfer**
 
    Use FileZilla to transfer configuration file to virtual machine or cloud.
+<br/>
 
 
 **7. Trading Results Analysis**
