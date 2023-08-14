@@ -6,7 +6,7 @@ By deploying Josh to a cloud service (AWS, Digital Ocean), he can work for me 24
 
 How to wake Josh up?
 
-1. Start off 
+1. Start-off 
 
    To start off docker image 
 ```
@@ -15,7 +15,7 @@ cd /Users/~/freqtrade/
 docker-compose up -d
 ```
 
-2. Download data
+2. Data Downloading
 
    I personally use Binance US data.
 ```
@@ -55,11 +55,11 @@ cd /Users/~/freqtrade
 docker-compose -f docker/docker-compose-jupyter.yml up
 ```
 
-6. File transfer
+6. File Transfer
 
    Use FileZilla to transfer configuration file to virtual machine or cloud.
 
 
-7. Analyze trading results
+7. Trading Results Analysis
 
-   From time to time, use the strategy_analysis.ipynb file to analyze and visualize trading results. Strategy needs constant update and analysis based on market    conditions.
+   From time to time, use the strategy_analysis.ipynb file to analyze and visualize trading results. Strategy needs constant update and analysis based on market conditions.
