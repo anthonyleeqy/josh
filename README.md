@@ -62,4 +62,4 @@ docker-compose -f docker/docker-compose-jupyter.yml up
 
 7. Analyze trading results
 
-   From time to time, use the strategy_analysis_AL.ipynb file to analyze and visualize trading results. Strategy needs constant update and analysis based on market    conditions.
+   From time to time, use the strategy_analysis.ipynb file to analyze and visualize trading results. Strategy needs constant update and analysis based on market    conditions.
